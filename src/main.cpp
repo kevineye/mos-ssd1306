@@ -2,7 +2,7 @@
 
 #include <Adafruit_SSD1306.h>
 
-Adafruit_SSD1306 display(16);
+Adafruit_SSD1306 display(16, Adafruit_SSD1306::RES_128_64);
 
 static void led_timer_cb(void *arg) {
   bool val = mgos_gpio_toggle(2);
