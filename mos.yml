@@ -22,5 +22,7 @@ config_schema:
   - ["i2c.sda_gpio", 4]
   - ["i2c.scl_gpio", 15]
   - ["i2c.debug", true]
+  - ["app", "o", {title: "Custom app settings"}]
+  - ["app.ssd1306_reset_pin", "i", 16, {title: "SSD1306 display reset pin"}]
 
 manifest_version: 2017-05-18
